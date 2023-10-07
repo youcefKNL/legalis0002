@@ -1,0 +1,10 @@
+.topLeftImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -40%);
+  mix-blend-mode: hard-light;
+  width: 40%;
+  z-index: 99;
+  opacity: 0.9;
+}
