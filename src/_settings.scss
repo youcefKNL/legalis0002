@@ -1,18 +1,43 @@
+// variables.scss
+
+$bg-img-about: url("./assets/DreamShaper_v7_Realistic_photo_of_the_universe_with_multicolor_1.jpg");
+
+@font-face {
+  font-family: "ubuntu";
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "young-serif";
+  src: url("./assets/fonts/YoungSerif-Regular.ttf");
+}
+
 * {
   //   background: red;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "ubuntu", sans-serif;
 }
 
 li {
   list-style: none;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "young-serif";
+}
 .page {
   position: relative;
-  background: linear-gradient(45deg, #2c3e50, #3498db, #8e44ad, #e74c3c);
+  // background: linear-gradient(45deg, #2c3e50, #3498db, #8e44ad, #e74c3c);
+  // background: rgb(0, 0, 0);
+  // background: $bg-img-about cover/center;
+  background: url("./assets/background/9.jpg") center/cover no-repeat;
+
   height: 100vh;
-  z-index: 99;
+  z-index: 991;
 }
 
 a {
