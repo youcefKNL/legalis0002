@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import Layout from "../components/Layout";
 // import Transition from "../components/Transition";
 //Avatar
@@ -9,6 +9,7 @@ import React, { useState } from "react";
 import ProjectsBtn from "../components/ProjectsBtn";
 //motion
 import Avatar from "../components/Avatar";
+import ParticlesContainer from "../components/ParticlesContainer";
 // import { fadeIn } from "../components/";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
 
   return (
     <main className="homeContainer">
+      <ParticlesContainer />
       {/* <Transition onComplete={handleTransitionComplete} /> */}
       {/* {isTransitionComplete && ( */}
       <div className="homeContent">

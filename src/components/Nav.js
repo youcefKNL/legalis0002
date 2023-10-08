@@ -40,8 +40,8 @@ const Nav = () => {
               key={index}
             >
               {link.icon}
-              <div className="iconTitle">{link.name}</div>
             </NavLink>
+            <div className="iconTitle">{link.name}</div>
           </li>
         ))}
       </ul>

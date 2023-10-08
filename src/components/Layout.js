@@ -5,9 +5,9 @@ import TopLeftImg from "../components/TopLeftImg";
 const Layout = ({ children }) => {
   return (
     <div className="page">
+      <Header />
       <TopLeftImg />
       <Nav />
-      <Header />
 
       {children}
     </div>
