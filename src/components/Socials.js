@@ -7,12 +7,12 @@ const Socials = () => {
     <div className="socialLink">
       <ul>
         <li>
-          <NavLink to="https://linkedin.fr" target="_blank">
+          <NavLink to="https://www.linkedin.com/in/youcef-knl/" target="_blank">
             <FaLinkedin />
           </NavLink>
         </li>
         <li>
-          <NavLink to="https://github.fr" target="_blank">
+          <NavLink to="https://github.com/youcefKNL" target="_blank">
             <FaGithub />
           </NavLink>
         </li>

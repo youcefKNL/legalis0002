@@ -20,5 +20,9 @@
     transition: 0.3s ease;
     color: ivory;
     font-size: 2em;
+    @media (max-width: 800px) {
+      font-size: 1.5em;
+      margin-top: 20%;
+    }
   }
 }

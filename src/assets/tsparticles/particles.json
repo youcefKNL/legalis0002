@@ -566,7 +566,7 @@
       "value": "#000000"
     },
     "draggable": true,
-    "opacity": 0.8,
+    "opacity": 1,
     "destroy": true,
     "orbits": false,
     "size": {
@@ -575,8 +575,8 @@
         "minimumValue": 30
       },
       "value": {
-        "min": 30,
-        "max": 50
+        "min": 10,
+        "max": 30
       },
       "density": 100,
       "limit": {
@@ -586,7 +586,7 @@
     },
     "position": {
       "x": 85,
-      "y": 15
+      "y": 20
     }
   },
   "emitters": [

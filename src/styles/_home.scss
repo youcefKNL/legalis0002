@@ -5,6 +5,7 @@
   width: 100%;
   color: black;
   overflow: hidden;
+
   .homeContent {
     @include center;
     justify-content: space-between;
@@ -12,6 +13,8 @@
     height: 100%;
     position: relative;
     .homeContentMain {
+      opacity: 0;
+      animation: homeAnime 2s 5s ease-in-out forwards;
       height: 100%;
       width: 50%;
       @include center;

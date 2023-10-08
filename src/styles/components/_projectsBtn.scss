@@ -1,6 +1,6 @@
 .badgeContainer {
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
   left: 15%;
 
   transition: 3s;
@@ -9,10 +9,12 @@
   @media (max-width: 800px) {
     bottom: 30%;
     left: 40%;
+    // animation: badgeShowLitlleScreen 4s;
   }
   @media (max-width: 500px) {
     bottom: 30%;
     left: 35%;
+    // animation: badgeShowLitlleScreen 4s;
   }
 
   img {
@@ -80,15 +82,31 @@
 
 @keyframes badgeShow {
   0% {
-    top: -70%;
+    bottom: 90%;
     left: 0;
     scale: 0;
     opacity: 0;
   }
   100% {
-    top: 75%;
+    bottom: 30%;
     scale: 1;
-    left: 15%;
+
     opacity: 1;
   }
 }
+
+// @keyframes badgeShowLitlleScreen {
+//   0% {
+//     bottom: 90%;
+//     left: 0;
+
+//     scale: 0;
+//     opacity: 0;
+//   }
+//   100% {
+//     bottom: 30%;
+//     scale: 1;
+
+//     opacity: 1;
+//   }
+// }

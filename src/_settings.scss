@@ -20,7 +20,9 @@ $bg-img-about: url("./assets/DreamShaper_v7_Realistic_photo_of_the_universe_with
   font-family: "ubuntu", sans-serif;
   user-select: none;
 }
-
+body {
+  overflow: hidden;
+}
 li {
   list-style: none;
 }
@@ -52,4 +54,13 @@ a {
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+@keyframes homeAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
