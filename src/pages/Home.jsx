@@ -13,17 +13,9 @@ import ParticlesContainer from "../components/ParticlesContainer";
 // import { fadeIn } from "../components/";
 
 const Home = () => {
-  // const [isTransitionComplete, setIsTransitionComplete] = useState(false);
-
-  // const handleTransitionComplete = () => {
-  //   setIsTransitionComplete(true);
-  // };
-
   return (
     <main className="homeContainer">
       <ParticlesContainer />
-      {/* <Transition onComplete={handleTransitionComplete} /> */}
-      {/* {isTransitionComplete && ( */}
       <div className="homeContent">
         <div className="homeContentMain">
           <h1>
@@ -43,9 +35,8 @@ const Home = () => {
         </div>
         <ProjectsBtn />
         <Avatar />
-        {/* <img src={Avatar} alt="Avatar" className="avatarHomePage" /> */}
       </div>
-      ){/* } */}
+      )
     </main>
   );
 };

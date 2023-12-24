@@ -1,0 +1,50 @@
+[
+  {
+    "title": "compétences",
+    "info": [
+      {
+        "text": "javascript",
+        "icon": "icone/javascript.png"
+      },
+      {
+        "text": "React",
+        "icon": "icone/react.png"
+      },
+      {
+        "text": "Node.js",
+        "icon": "icone/nodeJs.png"
+      },
+      {
+        "text": "MongoDB",
+        "icon": "icone/mongoDB.png"
+      },
+      {
+        "text": "seo",
+        "icon": "icone/seo.png"
+      }
+    ]
+  },
+  {
+    "title": "expérience",
+    "info": [
+      "Développeur Freelance",
+      "LEGALIS -Cabinet de Conseil-",
+      "2023 - Présent",
+      "Travaux sur des projets Web..."
+    ]
+  },
+  {
+    "title": "dark_XP",
+    "info": [
+      "-> Sniper 🎯",
+      "-> transmission & sécurisation 🔐",
+      "-> conducteur de métro 🚇",
+      "-> en reconversion vers le développement web & cybersécurité 💻🔒"
+    ]
+  },
+
+  {
+    "title": "diplômes",
+    "info": ["-> bac - gestion -", "-> bac+2 - developpement web -"]
+  }
+]

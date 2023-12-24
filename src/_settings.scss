@@ -41,6 +41,7 @@ h3 {
 
   height: 100vh;
   z-index: 991;
+  overflow: hidden;
 }
 
 a {
@@ -56,7 +57,7 @@ a {
   text-align: center;
 }
 
-@keyframes homeAnime {
+@keyframes basicAnimeOpacity {
   from {
     opacity: 0;
   }

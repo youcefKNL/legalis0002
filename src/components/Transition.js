@@ -58,73 +58,60 @@
 
 // export default Transition;
 
+// Transition.js
+// Transition.js
+// Transition.js
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-// Fonction pour générer des couleurs aléatoires en format hexadécimal
-const generateRandomColor = () => {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-};
+const usePageTransition = () => {
+  const [initialRender, setInitialRender] = useState(true);
 
-const Transition = ({ onComplete }) => {
-  const [animationComplete, setAnimationComplete] = useState(false);
+  useEffect(() => {
+    // Désactiver le rendu initial après le montage initial
+    setInitialRender(false);
+  }, []);
 
-  const handleAnimationComplete = () => {
-    setAnimationComplete(true);
-    if (onComplete && typeof onComplete === "function") {
-      onComplete(); // Call the provided callback function if it exists
-    }
-  };
+  const shouldPlayKeyframes = initialRender;
 
-  const variantsTransition = {
-    initial: {
-      borderRadius: "0",
-      width: 0,
-      height: 0,
-      top: 0,
-      left: 0,
-      background: `linear-gradient(45deg, ${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()})`,
-    },
+  const pageVariants = {
+    initial: shouldPlayKeyframes
+      ? {
+          opacity: 0,
+          transform: "translateY(100%)",
+        }
+      : {
+          opacity: 1,
+          transform: "translateY(0)",
+          transition: "0.3s ease",
+        },
     animate: {
-      width: "100vw",
-      height: "100vh",
-      borderRadius: 0,
-      top: 0,
-      left: 0,
-      background: `linear-gradient(45deg, ${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()})`,
-      transition: {
-        type: "spring",
-        stiffness: 50,
-        damping: 10,
-      },
+      opacity: 1,
+      transform: "translateY(0)",
+      transition: "0.3s ease",
     },
     exit: {
-      borderRadius: "0",
-      width: "0vw",
-      height: "0vh",
-      top: 0,
-      left: 0,
-      background: `linear-gradient(45deg, ${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()})`,
+      opacity: 0,
+      transition: { duration: 0.3, ease: "easeOut" },
+      transform: "translateY(-100%)",
     },
-    display: "none",
-    opacity: 0,
   };
+
+  return pageVariants;
+};
+
+const Transition = ({ children }) => {
+  const pageVariants = usePageTransition();
 
   return (
     <motion.div
-      className="transition"
-      variants={variantsTransition}
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ duration: 0.2, delay: 0, ease: "easeInOut" }}
-      onAnimationComplete={handleAnimationComplete}
-    />
+      variants={pageVariants}
+    >
+      {children}
+    </motion.div>
   );
 };
 

@@ -1,24 +1,39 @@
 // App.js
 import React from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./_index.scss";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import { AnimatePresence } from "framer-motion";
+import Transition from "./components/Transition";
 
 const App = () => {
   const location = useLocation();
   return (
     // <BrowserRouter>
-    <AnimatePresence mode="wait">
-      <Layout>
+    <Layout>
+      <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route
+            path="/"
+            element={
+              <Transition>
+                <Home />
+              </Transition>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Transition>
+                <About />
+              </Transition>
+            }
+          />
         </Routes>
-      </Layout>
-    </AnimatePresence>
+      </AnimatePresence>
+    </Layout>
     // </BrowserRouter>
   );
 };

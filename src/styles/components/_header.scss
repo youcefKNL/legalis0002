@@ -22,6 +22,10 @@ header {
       @media (max-width: 800px) {
         font-size: 1.5em;
       }
+      @media (max-width: 400px) {
+        font-size: 1em;
+      }
+
       span {
         color: red;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -39,9 +43,12 @@ header {
       top: 15%;
       right: -10%;
       animation: moveAfter 15s 10s linear forwards;
+      @media (max-width: 400px) {
+        font-size: 1em;
+      }
     }
   }
-  animation: homeAnime 2s 4s ease-in forwards;
+  animation: basicAnimeOpacity 2s 3s ease-in forwards;
   //   animation-delay: 4s;
 }
 
@@ -84,17 +91,6 @@ header {
   100% {
     top: 15%;
     right: -10%;
-    opacity: 1;
-  }
-}
-
-@keyframes headerAnime {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
