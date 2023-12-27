@@ -1,90 +1,215 @@
 .aboutContainer {
-  h1 {
-    color: red;
-    text-transform: uppercase;
-    font-size: 1.7em;
-    margin-bottom: 5%;
-  }
+  z-index: 9999;
   height: 100vh;
   @include center;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+
   width: 100%;
   color: black;
-  .list {
+  padding: 10% 5%;
+  .aboutContainerRight {
+    height: 50%;
     @include center;
-    > div {
-      position: relative;
-      margin: 0 5%;
-      text-transform: capitalize;
-      font-size: 1.3em;
-      cursor: pointer;
-      color: whitesmoke;
-      &:hover {
-        scale: 1.1;
-        transition: 0.3s;
-        &::after {
-          width: 100%;
-          transition: 0.3s;
-        }
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -20%;
-        width: 50%;
-        height: 2px; /* Ajustez la hauteur de la ligne selon vos besoins */
-        background-color: whitesmoke; /* Remplacez par la couleur de votre choix */
-        transition: 0.3s;
-      }
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    @media (max-width: 1000px) {
+      width: 100%;
+      height: 20%;
     }
-    .selected {
+    h2 {
       color: red;
-      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.7em;
+      margin-bottom: 5%;
+    }
 
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -20%;
-        width: 100%;
-        height: 3px; /* Ajustez la hauteur de la ligne selon vos besoins */
-        background-color: red; /* Remplacez par la couleur de votre choix */
-        transition: 0.4s;
-      }
-      &:hover {
-        scale: 0.8;
-        transition: 0.3s;
+    .list {
+      @include center;
+      font-size: 1em;
+
+      > div {
+        position: relative;
+        margin: 0 5%;
+        text-transform: capitalize;
+        font-size: 1em;
+        @media (max-width: 1300px) {
+          font-size: 0.8em;
+        }
+        @media (max-width: 1100px) {
+          font-size: 0.7em;
+        }
+
+        cursor: pointer;
         color: whitesmoke;
-        &::after {
-          width: 50%;
+        &:hover {
+          scale: 1.1;
           transition: 0.3s;
-          background-color: whitesmoke;
+          &::after {
+            width: 100%;
+            transition: 0.3s;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -20%;
+          width: 50%;
+          height: 2px; /* Ajustez la hauteur de la ligne selon vos besoins */
+          background-color: whitesmoke; /* Remplacez par la couleur de votre choix */
+          transition: 0.3s;
+        }
+      }
+      .selected {
+        color: red;
+        font-weight: bold;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -20%;
+          width: 100%;
+          height: 3px; /* Ajustez la hauteur de la ligne selon vos besoins */
+          background-color: red; /* Remplacez par la couleur de votre choix */
+          transition: 0.4s;
+        }
+        &:hover {
+          scale: 0.8;
+          transition: 0.3s;
+          color: whitesmoke;
+          &::after {
+            width: 50%;
+            transition: 0.3s;
+            background-color: whitesmoke;
+          }
+        }
+      }
+    }
+    .listContainer {
+      font-size: 1em;
+      margin-top: 10%;
+      color: aliceblue;
+      text-transform: capitalize;
+      text-align: left;
+      @media (max-width: 1300px) {
+        font-size: 0.8em;
+      }
+      @media (max-width: 1100px) {
+        font-size: 0.7em;
+      }
+      @media (max-width: 600px) {
+        margin-top: 5%;
+      }
+    }
+    .compétences {
+      @include center;
+      flex-wrap: wrap;
+      width: 80%;
+      // flex-direction: row;
+      li {
+        img {
+          width: 4em;
+          margin: 1em 1em;
+          animation: swing 5s linear infinite;
+          &:hover {
+            animation: swing 0.5s linear infinite;
+          }
+        }
+        span {
+          display: none;
         }
       }
     }
   }
-  .listContainer {
-    font-size: 1.5em;
-    margin-top: 10%;
-    color: aliceblue;
-    text-transform: capitalize;
+
+  .aboutContainerLeft {
+    // background: red;
+    color: whitesmoke;
     text-align: left;
-  }
-  .compétences {
-    @include center;
-    // flex-direction: row;
-    li {
-      img {
-        width: 50px;
-        margin: 0 50px;
-        animation: swing 5s linear infinite;
-        &:hover {
-          animation: swing 0.5s linear infinite;
-        }
-      }
+    width: 50%;
+    height: 50%;
+    @media (max-width: 1000px) {
+      width: 80%;
+      margin: 5%;
+      height: 50%;
+      font-size: 0.7em;
+    }
+    h2 {
+      margin-bottom: 5%;
       span {
-        display: none;
+        color: red;
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+    }
+    p {
+      text-align: justify;
+      font-weight: bold;
+      background: linear-gradient(to right, red, white);
+      -webkit-background-clip: text; /* Pour le support de WebKit/Blink (Chrome, Safari) */
+      background-clip: text; // Standard property
+      // Vendor prefixes for compatibility
+      -webkit-background-clip: text; // Chrome, Safari 3
+      -moz-background-clip: text; // Firefox
+      -o-background-clip: text; // Opera
+
+      color: transparent; /* Rendre le texte transparent pour que le dégradé soit visible */
+    }
+
+    .avatarContainer {
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      // transform: translateX(-50%);
+      @media (max-width: 600px) {
+        bottom: 10%;
+      }
+      opacity: 1;
+      animation: none;
+      animation: slideInFromBottom 1.2s ease-out;
+    }
+    .aboutContainerLeftCounter {
+      @include center;
+      flex-direction: column;
+      width: 80px;
+      height: 80px;
+      margin-top: 10%;
+      color: red;
+      font-size: 2em;
+      font-weight: bold;
+      backdrop-filter: blur(3px);
+      border-radius: 50%;
+      box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.5);
+      // border: 1px solid black;
+      padding: 8%;
+      @media (max-width: 1300px) {
+        font-size: 1.5em;
+      }
+      @media (max-width: 1100px) {
+        font-size: 1em;
+        margin-top: 2%;
+      }
+
+      span {
+        text-align: center;
+        width: 100%;
+        // display: block;
+      }
+      .xp {
+        @include center;
+      }
+      .xpText {
+        text-align: left;
+        color: whitesmoke;
+        font-size: 0.4em;
+        text-transform: uppercase;
+        font-weight: bold;
       }
     }
   }
@@ -105,5 +230,16 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

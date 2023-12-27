@@ -21,6 +21,14 @@
       {
         "text": "seo",
         "icon": "icone/seo.png"
+      },
+      {
+        "text": "linux",
+        "icon": "icone/linux.png"
+      },
+      {
+        "text": "owasp",
+        "icon": "icone/owasp.png"
       }
     ]
   },
@@ -37,7 +45,7 @@
     "title": "dark_XP",
     "info": [
       "-> Sniper 🎯",
-      "-> transmission & sécurisation 🔐",
+      "-> transmission & sécurisation (Armée / Thalés) 🔐",
       "-> conducteur de métro 🚇",
       "-> en reconversion vers le développement web & cybersécurité 💻🔒"
     ]
