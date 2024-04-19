@@ -5,6 +5,8 @@ import "./_index.scss";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Services from "./pages/Services";
+
 import { AnimatePresence } from "framer-motion";
 import Transition from "./components/Transition";
 
@@ -29,6 +31,14 @@ const App = () => {
               <Transition>
                 <About />
               </Transition>
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              // <Transition>
+              <Services />
+              // {/* </Transition> */}
             }
           />
         </Routes>

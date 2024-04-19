@@ -1,0 +1,89 @@
+.servicesPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  @include center;
+  color: white;
+  .one {
+    margin-left: auto;
+    margin-right: auto;
+
+    .two {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 1280px) {
+        flex-direction: row;
+      }
+
+      > * + * {
+        margin-left: 8px; /* ou tout autre espacement souhaité */
+      }
+      .three {
+        text-align: center; /* text-center */
+        display: flex; /* flex */
+        flex-direction: column; /* flex-col */
+
+        @media (min-width: 1024px) {
+          flex-direction: row;
+          //   width: 30vw; /* xl:w-[30vw] */
+        }
+
+        @media (min-width: 1280px) {
+          text-align: left; /* lg:text-left */
+          margin-bottom: 1rem; /* mb-4 = 4 * 0.25rem = 1rem */
+          margin-bottom: 0; /* xl:mb-0 */
+        }
+        h2 {
+          /* Styles de base pour h2 */
+
+          @media (min-width: 1280px) {
+            margin-top: 8px;
+          }
+          span {
+            color: red;
+          }
+        }
+        p {
+          margin-bottom: 1rem; /* mb-4 = 4 * 0.25rem = 1rem */
+          max-width: 400px; /* max-w-[400px] */
+          margin-left: auto;
+          margin-right: auto; /* mx-auto */
+
+          @media (min-width: 1024px) {
+            margin-left: 0; /* lg:mx-0 */
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .bulb {
+    position: absolute;
+    left: -36px;
+    bottom: -12px;
+    mix-blend-mode: color-dodge;
+
+    @keyframes pulse {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+    animation: pulse 2s infinite;
+    // transition-duration: 0.75s;
+    z-index: 10;
+    width: 200px;
+
+    @media (min-width: 1280px) {
+      width: 260px;
+    }
+    img {
+      width: 80%;
+      transform: rotate(20deg);
+    }
+  }
+}
