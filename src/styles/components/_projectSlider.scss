@@ -1,0 +1,106 @@
+swiper-container {
+  padding: 0 10%;
+  width: 1400px;
+  height: 480px;
+
+  @media (max-width: 1400px) {
+    height: 400px;
+
+    padding: 0 20%;
+  }
+  @media (max-width: 1100px) {
+    height: 400px;
+    width: 1200px;
+    padding: 0 25%;
+  }
+  @media (max-width: 800px) {
+    height: 400px;
+    width: 1000px;
+    padding: 0 30%;
+  }
+
+  @media (max-width: 640px) {
+    height: 340px;
+    width: 400px;
+    padding: 0 10%;
+    margin-top: 5%;
+  }
+
+  .projectSlider-wrap {
+    height: 90%;
+    .projectSlider {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      background: rgba(
+        255,
+        255,
+        255,
+        0.2
+      ); /* Couleur de fond semi-transparente */
+      backdrop-filter: blur(10px); /* Effet de flou */
+      border-radius: 20px; /* Coins arrondis */
+      overflow: hidden; /* Masquer le contenu débordant des coins arrondis */
+      color: #fff;
+      font-size: 1em;
+      height: 100%;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 50%;
+        padding: 0 0 0 5%;
+        transition: 0.3s ease-in-out;
+        @media (max-width: 600px) {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      .projectDescription {
+        @media (max-width: 600px) {
+          width: 100%;
+          padding: 0;
+        }
+        height: 100%;
+        width: 50%;
+        @include center;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 5%;
+        h3 {
+          font-size: 1.5em;
+          @media (max-width: 600px) {
+            display: none;
+          }
+        }
+        p {
+          font-size: 1.1em;
+          text-align: justify;
+          @media (max-width: 600px) {
+            display: none;
+          }
+        }
+        .icon {
+          font-size: 2em;
+          transition: 0.3s ease;
+          // Au survol
+          &:hover {
+            color: red;
+            cursor: pointer;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

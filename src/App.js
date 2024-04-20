@@ -9,12 +9,16 @@ import Services from "./pages/Services";
 
 import { AnimatePresence } from "framer-motion";
 import Transition from "./components/Transition";
+import Project from "./pages/Project";
+import ParticlesContainer from "./components/ParticlesContainer";
 
 const App = () => {
   const location = useLocation();
   return (
     // <BrowserRouter>
     <Layout>
+      <ParticlesContainer />
+
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route
@@ -36,9 +40,17 @@ const App = () => {
           <Route
             path="/services"
             element={
-              // <Transition>
-              <Services />
-              // {/* </Transition> */}
+              <Transition>
+                <Services />
+              </Transition>
+            }
+          />
+          <Route
+            path="/projet"
+            element={
+              <Transition>
+                <Project />
+              </Transition>
             }
           />
         </Routes>

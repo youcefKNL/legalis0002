@@ -9,13 +9,12 @@ import React from "react";
 import ProjectsBtn from "../components/ProjectsBtn";
 //motion
 import Avatar from "../components/Avatar";
-import ParticlesContainer from "../components/ParticlesContainer";
+
 // import { fadeIn } from "../components/";
 
 const Home = () => {
   return (
     <main className="homeContainer">
-      <ParticlesContainer />
       <div className="homeContent">
         <div className="homeContentMain">
           <h1>

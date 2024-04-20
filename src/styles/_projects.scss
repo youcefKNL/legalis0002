@@ -1,0 +1,40 @@
+.projectsPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  @include center;
+  color: white;
+  .projectsPage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .projectsPage-intro {
+      padding-left: 30%;
+      @media (max-width: 600px) {
+        padding-left: 20%;
+      }
+      h2 {
+        font-size: 2em;
+        margin-bottom: 2%;
+        text-align: left;
+        @media (min-width: 1280px) {
+          margin-top: 8px;
+        }
+        span {
+          color: red;
+        }
+      }
+      p {
+        // display: block;
+        margin-bottom: 5%;
+        font-size: 1.2em;
+        max-width: 50%;
+        text-align: left;
+
+        @media (max-width: 600px) {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
