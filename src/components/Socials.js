@@ -16,11 +16,11 @@ const Socials = () => {
             <FaGithub />
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="https://whatsapp.fr" target="_blank">
             <FaWhatsapp />
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

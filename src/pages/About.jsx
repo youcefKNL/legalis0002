@@ -9,9 +9,11 @@ const About = ({ nav }) => {
   return (
     <section className={`aboutContainer ${nav?.isActive ? "nav-active" : ""}`}>
       <div className="aboutContainerRight">
-        {/* <h2>A Propos</h2> */}
+        <h2>
+          Mes compétences <span>.</span>{" "}
+        </h2>
         <div className="list">
-          {aboutData.map((item, itemIndex) => (
+          {/* {aboutData.map((item, itemIndex) => (
             <div
               className={`${index === itemIndex ? "selected" : "notSelected"} `}
               key={itemIndex}
@@ -21,7 +23,7 @@ const About = ({ nav }) => {
             >
               {item.title}
             </div>
-          ))}
+          ))} */}
         </div>
         <ul className={`listContainer ${aboutData[index].title}`}>
           {aboutData[index].info.map((item, itemIndex) => (

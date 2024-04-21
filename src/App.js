@@ -11,6 +11,7 @@ import { AnimatePresence } from "framer-motion";
 import Transition from "./components/Transition";
 import Project from "./pages/Project";
 import ParticlesContainer from "./components/ParticlesContainer";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const location = useLocation();
@@ -50,6 +51,14 @@ const App = () => {
             element={
               <Transition>
                 <Project />
+              </Transition>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Transition>
+                <Contact />
               </Transition>
             }
           />

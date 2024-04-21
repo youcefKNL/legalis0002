@@ -1,18 +1,18 @@
 .badgeContainer {
   position: absolute;
-  bottom: 40%;
-  left: 5%;
+  bottom: 30%;
+  left: 20%;
   transition: 3s;
   z-index: 2;
-  animation: badgeShow 4s;
+  animation: badgeShow 4s forwards;
   @media (max-width: 800px) {
     bottom: 25%;
     left: 20%;
-    // animation: badgeShowLitlleScreen 4s;
+    animation: badgeShow 2s;
   }
   @media (max-width: 600px) {
     bottom: 40%;
-    left: 0%;
+    left: 10%;
     animation: badgeShow 2s;
   }
 
@@ -89,8 +89,8 @@
       opacity: 0;
     }
     100% {
-      bottom: 40%;
-      left: 5%;
+      bottom: 30%;
+      left: 20%;
       scale: 1;
       opacity: 1;
     }

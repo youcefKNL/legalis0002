@@ -85,7 +85,7 @@ const ServiceSlider = () => {
       style={{
         "--swiper-navigation-color": "#ff0000",
         "--swiper-pagination-color": "#ff0000",
-        "--swiper-pagination-bottom": "0px",
+        "--swiper-pagination-bottom": "10%",
         "--swiper-pagination-bullet-size": "1em",
         "--swiper-pagination-bullet-inactive-color": "ivory",
         "--swiper-pagination-bullet-inactive-opacity": "1",

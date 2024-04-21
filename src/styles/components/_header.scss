@@ -42,9 +42,12 @@ header {
       font-size: 2em;
       top: 15%;
       right: -10%;
-      animation: moveAfter 15s 10s linear forwards;
+      animation: moveAfter 7s 3s linear forwards;
       @media (max-width: 400px) {
         font-size: 1em;
+      }
+      @media (max-width: 1000px) {
+        animation: moveAfter2 7s 3s linear forwards;
       }
     }
   }
@@ -92,5 +95,36 @@ header {
     top: 15%;
     right: -10%;
     opacity: 1;
+  }
+}
+
+@keyframes moveAfter2 {
+  0% {
+    right: 150%;
+    top: 3000%;
+    opacity: 0.7;
+    scale: 5;
+  }
+  20% {
+    transform: rotate(-30deg);
+    right: 50%;
+  }
+  40% {
+    transform: rotate(-60deg);
+    right: 15%;
+  }
+  60% {
+    transform: rotate(-120deg);
+    right: -10%;
+  }
+  80% {
+    transform: rotate(20deg);
+    right: 100%;
+  }
+  100% {
+    top: 15%;
+    right: -10%;
+    opacity: 1;
+    scale: 1;
   }
 }

@@ -22,14 +22,12 @@ const Home = () => {
             <span> Création</span>
           </h1>
           <p>
-            Passionné par le numérique et l'innovation, je suis un développeur
-            web FullStack dédié à transformer vos idées en expériences
-            numériques mémorables. Ma spécialité réside dans l'écosystème
-            JavaScript. Avec une expertise complète en développement web front
-            et back, je crée des solutions sur mesure qui marquent les esprits
-            et propulsent vos projets vers l'excellence digitale. Explorez mon
-            univers où chaque ligne de code est un coup de pinceau sur la toile
-            du web, créant ainsi des expériences inoubliables et efficaces.
+            Passionné par l'innovation numérique, je suis un développeur
+            FullStack en reconversion vers la cybersécurité. Expert en
+            JavaScript, je crée des expériences web sur mesure tout en
+            renforçant la sécurité de vos systèmes. Explorez mon univers où
+            chaque ligne de code est une étape vers l'excellence digitale et la
+            protection contre les cybermenaces.
           </p>
         </div>
         <ProjectsBtn />

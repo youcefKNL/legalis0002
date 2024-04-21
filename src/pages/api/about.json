@@ -15,12 +15,20 @@
         "icon": "icone/nodeJs.png"
       },
       {
+        "text": "kali linux",
+        "icon": "icone/python.png"
+      },
+      {
         "text": "MongoDB",
         "icon": "icone/mongoDB.png"
       },
       {
         "text": "seo",
         "icon": "icone/seo.png"
+      },
+      {
+        "text": "kali linux",
+        "icon": "icone/pentester.png"
       },
       {
         "text": "linux",
@@ -32,7 +40,7 @@
       },
       {
         "text": "kali linux",
-        "icon": "icone/kali.png"
+        "icon": "icone/kali2.png"
       }
     ]
   },

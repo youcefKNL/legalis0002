@@ -1,0 +1,158 @@
+.contact {
+    height: 100vh;
+    @include center;
+    width: 80%;
+    z-index: 4;
+    margin: 0 auto;
+    @include center;
+
+
+    @media (max-width :1100px) {
+        width: 75%;
+    }
+
+    @media (max-width:600px) {
+        padding-bottom: 10%;
+    }
+
+    .avatar {
+        // border: 1px solid ivory;
+        // border-radius: 50%;
+        width: 50%;
+        max-width: 400px;
+
+
+        // overflow: hidden;
+        // margin: 5%;
+
+        @media (max-width:600px) {
+            width: 40%;
+            padding-bottom: 20%;
+
+            position: fixed;
+            bottom: 5%;
+            left: 0;
+        }
+
+
+
+        @include center;
+
+    }
+
+    .contactContainer {
+        @include center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1400px;
+
+        @media (max-width:600px) {
+            width: 100%;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 5%;
+            color: ivory;
+            font-size: 3em;
+            width: 100%;
+            z-index: 3;
+
+            span {
+                padding-left: 1%;
+                color: red
+            }
+
+
+            @media (max-width :1100px) {
+                font-size: 2em;
+            }
+
+            @media (max-width:600px) {
+                font-size: 1.5em;
+                text-align: left;
+                // margin-bottom: 10%;
+            }
+        }
+
+        p {
+            z-index: 3;
+
+            @include center;
+            flex-direction: column;
+            color: white;
+
+            font-size: 1.2em;
+            text-align: left;
+            font-weight: bold;
+
+            @media (max-width:600px) {
+                font-size: 0.8em;
+                width: 100%;
+                text-align: justify;
+            }
+
+            .iconLink {
+                font-size: 3em;
+                color: blue;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                margin-top: 5%;
+                display: block;
+
+                &:hover {
+
+                    color: red;
+                }
+
+                @media (max-width:600px) {
+
+                    margin-top: 10%;
+                }
+
+            }
+        }
+    }
+
+    .tourbillon {
+        animation: rotate 3s linear infinite;
+        position: fixed;
+        bottom: -5%;
+        right: 10%;
+        z-index: -1;
+        width: 30%;
+
+        @media (max-width:600px) {
+
+            bottom: 20%;
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+            opacity: 0.3;
+
+
+        }
+
+        50% {
+            transform: rotate(360deg);
+            opacity: 1;
+        }
+
+        99.9% {
+            transform: rotate(720deg);
+            opacity: 0.3;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            /* Retour à l'état initial */
+            opacity: 0.2;
+            /* Vous pouvez ajuster cela selon vos besoins */
+        }
+    }
+
+
+}

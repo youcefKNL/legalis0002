@@ -4,26 +4,43 @@
   height: 100vh;
   @include center;
   color: white;
+
   .projectsPage-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+    @media (max-width: 600px) {
+      margin-top: 20%;
+    }
+
     .projectsPage-intro {
       padding-left: 30%;
+
       @media (max-width: 600px) {
         padding-left: 20%;
       }
+
       h2 {
         font-size: 2em;
         margin-bottom: 2%;
         text-align: left;
+
         @media (min-width: 1280px) {
           margin-top: 8px;
         }
+
+        @media (max-width: 600px) {
+          font-size: 1.5em;
+        }
+
+
         span {
           color: red;
         }
       }
+
       p {
         // display: block;
         margin-bottom: 5%;
@@ -33,6 +50,10 @@
 
         @media (max-width: 600px) {
           max-width: 80%;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 0.8em;
         }
       }
     }

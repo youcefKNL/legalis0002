@@ -1,33 +1,19 @@
 .avatarContainer {
+  z-index: 2;
+
   position: absolute;
   // bottom: 0;
   // right: 0;
   animation: avatarAnime 0.6s ease-in 5s forwards;
   opacity: 0;
-  @media (max-width: 600px) {
+  @media (max-width: 350px) {
   }
   animation: avatarAnime 0.6s ease-in 2s forwards;
   .avatar {
     position: relative;
-    width: 600px;
-
-    @media (max-width: 1600px) {
-      width: 400px;
-    }
-    @media (max-width: 1300px) {
-      width: 300px;
-    }
-    @media (max-width: 1200px) {
-      width: 250px;
-    }
-    @media (max-width: 1000px) {
-      width: 200px;
-    }
-    @media (max-width: 800px) {
-      width: 150px;
-    }
-    @media (max-width: 600px) {
-      width: 65%;
+    width: 100%;
+    @media (max-width: 400px) {
+      width: 50%;
       // display: none;
     }
   }
@@ -115,7 +101,7 @@
       opacity: 1;
       scale: 1;
       bottom: 0;
-      right: 20%;
+      right: 0%;
     }
   }
 }

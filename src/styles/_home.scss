@@ -3,60 +3,73 @@
   @include center;
   width: 100%;
   color: black;
-  // overflow: hidden;
+  z-index: 4;
 
   .homeContent {
+    z-index: 1;
+
     @include center;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
     position: relative;
+    width: 100%;
 
     .homeContentMain {
       opacity: 0;
       animation: basicAnimeOpacity 2s 4s ease-in-out forwards;
       height: 100%;
-      width: 50%;
+      width: 75%;
 
       @include center;
       flex-direction: column;
+
       @media (max-width: 800px) {
         justify-content: normal;
-        margin-top: 20%;
+        margin-top: 25%;
         width: 70%;
       }
+
       @media (max-width: 600px) {
         animation: basicAnimeOpacity 2s 3s ease-in-out forwards;
-
         width: 100%;
       }
+
       // padding-top: 10%;
       h1 {
-        mix-blend-mode: exclusion;
+        z-index: 4;
 
+        mix-blend-mode: exclusion;
         font-size: 4em;
         // padding: 0 30% 0 25%;
         text-align: left;
         width: 100%;
         margin-bottom: 5%;
         color: ivory;
+
         @media (max-width: 1600px) {
           font-size: 3em;
         }
+
         @media (max-width: 1400px) {
           font-size: 2em;
         }
+
         @media (max-width: 800px) {
           font-size: 1.5em;
         }
+
         @media (max-width: 600px) {
           margin-top: 20%;
-          padding: 0 10%;
+          padding: 0 5%;
         }
+
         @media (max-width: 400px) {
           font-size: 1.2em;
-          margin-top: 20%;
+          margin-top: 40%;
+          z-index: 40;
         }
+
         span {
           font-family: "young-serif";
           color: red;
@@ -67,21 +80,27 @@
           text-transform: uppercase;
         }
       }
+
       p {
         font-size: 2em;
         // margin-left: 25%;
         text-align: justify;
         color: aliceblue;
+        z-index: 4;
+
         // mix-blend-mode: color-dodge;
         @media (max-width: 1600px) {
-          font-size: 1.5em;
+          // font-size: 1.5em;
         }
+
         @media (max-width: 1100px) {
-          font-size: 1em;
+          // font-size: 1em;
         }
+
         @media (max-width: 800px) {
-          font-size: 1em;
+          font-size: 1.3em;
         }
+
         @media (max-width: 600px) {
           display: none;
           // padding: 0 10%;
