@@ -1,0 +1,36 @@
+.notFound {
+    height: 100svh;
+    width: 100swh;
+    @include center;
+    align-items: center;
+    overflow: hidden;
+    background: url("../assets/background/2.jpg") center/cover no-repeat;
+
+
+
+    h2 {
+        font-size: 4em;
+        color: red;
+
+        // mix-blend-mode: difference;
+
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
+    h3 {
+        font-size: 2em;
+        color: white;
+
+        // mix-blend-mode: color-dodge;
+        filter: drop-shadow(13px -23px 260px #ffffff);
+        transition: 0.2s ease-in;
+
+        &:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+    }
+}

@@ -12,6 +12,7 @@ import Transition from "./components/Transition";
 import Project from "./pages/Project";
 import ParticlesContainer from "./components/ParticlesContainer";
 import Contact from "./pages/Contact";
+import Page404 from "./pages/Page404";
 
 const App = () => {
   const location = useLocation();
@@ -22,6 +23,8 @@ const App = () => {
 
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
+          <Route path="*" element={<Page404 />} />
+
           <Route
             path="/"
             element={
