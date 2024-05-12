@@ -1,7 +1,7 @@
 import workSlides from "../pages/api/project.json";
 
 import { FaGithub } from "react-icons/fa";
-// import { TbWorldWww } from "react-icons/tb";
+import { TbWorldWww } from "react-icons/tb";
 
 //import swiper Module
 
@@ -51,13 +51,16 @@ const WorkSlider = () => {
                 <div className="projectDescription">
                   <h3>{project.title}</h3>
                   <p>{project.mission}</p>
-                  <FaGithub
-                    onClick={() => handleGitHubClick(project.moreInfo)}
-                    className="icon"
-                  />
-                  {/* <TbWorldWww
-                  onClick={() => handleGitHubClick(project.siteUrl)}
-                /> */}
+                  <div className="linksProjects">
+                    <FaGithub
+                      onClick={() => handleGitHubClick(project.moreInfo)}
+                      className="icon"
+                    />
+                    <TbWorldWww
+                      onClick={() => handleGitHubClick(project.siteUrl)}
+                      className="icon"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

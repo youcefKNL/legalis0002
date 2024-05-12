@@ -4,6 +4,7 @@
   right: 5%;
   top: 50%;
   transform: translate(0, -50%);
+
   @media (max-width: 600px) {
     right: auto;
     top: auto;
@@ -15,14 +16,16 @@
     // background: linear-gradient(45deg, #e74c3c, #8e44ad, #3498db, #2c3e50);
     backdrop-filter: blur(500px);
     border-top: 2px solid white;
-    height: 10vh;
+    height: 10svh;
     width: 100%;
     transform: none;
   }
+
   ul {
     height: 100%;
     background: transparent;
-    backdrop-filter: blur(10px); /* Ajout du flou au fond */
+    backdrop-filter: blur(10px);
+    /* Ajout du flou au fond */
     text-align: center;
     @include center;
     flex-direction: column;
@@ -30,15 +33,18 @@
     border-radius: 90px;
     padding: 20% 1%;
     font-size: 2em;
+
     @media (max-width: 600px) {
       justify-content: space-around;
       border: none;
       font-size: 1.5em;
       padding: 0;
     }
+
     li {
       padding: 10px;
       position: relative;
+
       .iconTitle {
         scale: 0;
         opacity: 0;
@@ -60,6 +66,7 @@
         transition: 0.3s;
         text-transform: capitalize;
         border-radius: 20px 0 0 20px;
+
         &::before {
           content: "";
           position: absolute;
@@ -68,34 +75,40 @@
           border-style: solid;
           border-width: 15px 0 15px 30px;
           // backdrop-filter: blur(10000px); /* Ajout du flou au fond */
-          border-color: transparent transparent transparent
-            rgba(255, 255, 255, 0.6); /* Couleur du triangle */
+          border-color: transparent transparent transparent rgba(255, 255, 255, 0.6);
+          /* Couleur du triangle */
         }
+
         @media (max-width: 600px) {
           display: none;
           padding: 0;
         }
       }
+
       &:hover {
         .iconTitle {
           animation: animateTitle 0.3s ease forwards;
         }
+
         svg {
           transition: 0.3s;
           scale: 1.2;
           color: rgb(255, 0, 0);
         }
       }
+
       .nav-active {
         svg {
           color: rgb(255, 0, 0);
           scale: 1.1;
         }
       }
+
       svg {
         color: ivory;
       }
     }
+
     @media (max-width: 600px) {
       flex-direction: row;
     }
@@ -109,6 +122,7 @@
     opacity: 0;
     left: -300px;
   }
+
   to {
     scale: 1;
     opacity: 1;

@@ -2,12 +2,14 @@ import React from "react";
 import avatar from "../assets/avatar/avatar gorilla.png";
 import { FaLinkedin } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import test from "../assets/éclair/test5.png";
+// import test from "../assets/éclair/test5.png";
 
 const Contact = () => {
   return (
     <section className="contact">
-      <img src={avatar} alt="" className="avatar" />
+      <div className="avatarContactContainer">
+        <img src={avatar} alt="" className="avatar" />
+      </div>
 
       <div className="contactContainer">
         <h2>
@@ -27,7 +29,7 @@ const Contact = () => {
           </NavLink>
         </p>
       </div>
-      <img src={test} alt="" className="tourbillon" />
+      {/* <img src={test} alt="" className="tourbillon" /> */}
     </section>
   );
 };

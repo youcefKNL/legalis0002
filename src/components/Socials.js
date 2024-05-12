@@ -1,5 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { MdOutlineSecurity } from "react-icons/md";
+
 import { NavLink } from "react-router-dom";
 
 const Socials = () => {
@@ -14,6 +16,11 @@ const Socials = () => {
         <li>
           <NavLink to="https://github.com/youcefKNL" target="_blank">
             <FaGithub />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="https://blog.cabinetlegalis.fr/" target="_blank">
+            <MdOutlineSecurity />
           </NavLink>
         </li>
         {/* <li>

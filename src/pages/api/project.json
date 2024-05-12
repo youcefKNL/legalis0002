@@ -28,12 +28,13 @@
     "title": "Intégration Maquette",
     "technologie": "HTML, CSS/SCSS",
     "icon": "https://youcefknl.github.io/datatest/github/icon/logo192.png",
-    "picture": "https://github.com/youcefKNL/legalis0002/blob/main/public/workImage/Blog.webp",
+    "picture": "https://raw.githubusercontent.com/youcefKNL/legalis0002/main/public/workImage/Blog.jpg",
 
-    "mission": "Ma mission consistait à développer un blog sur la montagne en utilisant les bases du HTML et du SCSS, en se concentrant sur l'apprentissage de l'intégration de maquettes professionnelles. J'ai commencé par créer la structure HTML du site en suivant les maquettes professionnelles fournies, en veillant à respecter les bonnes pratiques d'accessibilité et de sémantique. Ensuite, j'ai stylisé le contenu en utilisant du SCSS pour créer des mises en page réactives et attrayantes, tout en ajoutant des effets CSS pour améliorer l'expérience utilisateur.",
+    "mission": "Ma mission consistait à développer un blog sur la montagne en utilisant les bases du HTML et du SCSS, en se concentrant sur l'apprentissage de l'intégration de maquettes professionnelles.",
+
     "skill": "Pendant le développement de ce projet, j'ai consolidé mes compétences en HTML, SCSS, CSS et en intégration de maquettes. J'ai appris à structurer un site web de manière efficace en utilisant les éléments HTML appropriés et à styliser le contenu en utilisant les fonctionnalités avancées du SCSS. De plus, j'ai expérimenté avec différents effets CSS pour ajouter de l'interactivité et de la dynamique à l'interface utilisateur. Ce projet m'a permis de renforcer mes bases en développement web et d'acquérir de l'expérience pratique dans l'intégration de maquettes professionnelles.",
     "siteUrl": " https://youcefknl.github.io/Integration-maquette-la-montage-/",
     "github": "https://github.com/youcefKNL/Integration-maquette-la-montage-",
-    "moreInfo": "https://github.com/youcefKNL/Integration-maquette-la-montage-README.md"
+    "moreInfo": "https://github.com/youcefKNL/Integration-maquette-la-montage-/blob/main/README.md"
   }
 ]

@@ -63,11 +63,6 @@ const About = ({ nav }) => {
           <br />
           Mon engagement envers la cybersécurité est une mission profonde, une
           quête pour protéger les données et garantir la sécurité en ligne.
-          <br />
-          Rejoignez-moi dans cette fusion entre la passion pour le web et le
-          rôle de gardien de la cybersécurité, où la créativité rencontre la
-          sécurité numérique, et où la force de la reconversion devient une
-          puissante alliée dans ce monde en constante évolution.
         </p>
         <div className="aboutContainerLeftCounter">
           <div className="xp">

@@ -1,5 +1,5 @@
 .contact {
-    height: 100vh;
+    height: 100svh;
     @include center;
     width: 80%;
     z-index: 4;
@@ -15,29 +15,36 @@
         padding-bottom: 10%;
     }
 
-    .avatar {
-        // border: 1px solid ivory;
-        // border-radius: 50%;
+    .avatarContactContainer {
         width: 50%;
-        max-width: 400px;
+        @include center;
+        height: 100svh;
+        align-items: flex-end;
 
+        .avatar {
+            // border: 1px solid ivory;
+            // border-radius: 50%;
+            width: 400px;
+            // bottom: 0;
 
-        // overflow: hidden;
-        // margin: 5%;
+            // overflow: hidden;
+            // margin: 5%
+            @include center;
+
+            @media (max-width:600px) {
+                width: 300px;
+            }
+
+        }
 
         @media (max-width:600px) {
-            width: 40%;
-            padding-bottom: 20%;
+            width: 20%;
+            padding-bottom: 10%;
 
             position: fixed;
             bottom: 5%;
             left: 0;
         }
-
-
-
-        @include center;
-
     }
 
     .contactContainer {

@@ -20,9 +20,11 @@ $bg-img-about: url("./assets/DreamShaper_v7_Realistic_photo_of_the_universe_with
   font-family: "ubuntu", sans-serif;
   user-select: none;
 }
+
 body {
   overflow: hidden;
 }
+
 li {
   list-style: none;
 }
@@ -32,6 +34,7 @@ h2,
 h3 {
   font-family: "young-serif";
 }
+
 .page {
   position: relative;
   // background: linear-gradient(45deg, #2c3e50, #3498db, #8e44ad, #e74c3c);
@@ -39,7 +42,7 @@ h3 {
   // background: $bg-img-about cover/center;
   background: url("./assets/background/9.jpg") center/cover no-repeat;
 
-  height: 100vh;
+  height: 100svh;
   z-index: 991;
   overflow: hidden;
 }
@@ -61,6 +64,7 @@ a {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

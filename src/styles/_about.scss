@@ -1,6 +1,6 @@
 .aboutContainer {
   z-index: 9999;
-  height: 100vh;
+  height: 100svh;
   @include center;
   padding: 10% 0;
   flex-direction: row-reverse;
@@ -31,7 +31,7 @@
       color: ivory;
       text-transform: capitalize;
       font-size: 2em;
-      margin-bottom: 5%;
+      margin-bottom: 10%;
 
       @media (max-width: 600px) {
         font-size: 1.5em;
@@ -233,6 +233,7 @@
 
       color: transparent;
       /* Rendre le texte transparent pour que le dégradé soit visible */
+      backdrop-filter: blur(2px);
     }
 
     .avatarContainer {
