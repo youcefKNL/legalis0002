@@ -28,7 +28,7 @@
     "title": "Intégration Maquette",
     "technologie": "HTML, CSS/SCSS",
     "icon": "https://youcefknl.github.io/datatest/github/icon/logo192.png",
-    "picture": "https://raw.githubusercontent.com/youcefKNL/legalis0002/main/public/workImage/Blog.jpg",
+    "picture": "https://github.com/youcefKNL/legalis0002/blob/main/public/workImage/Blog.png?raw=true",
 
     "mission": "Ma mission consistait à développer un blog sur la montagne en utilisant les bases du HTML et du SCSS, en se concentrant sur l'apprentissage de l'intégration de maquettes professionnelles.",
 
@@ -36,5 +36,19 @@
     "siteUrl": " https://youcefknl.github.io/Integration-maquette-la-montage-/",
     "github": "https://github.com/youcefKNL/Integration-maquette-la-montage-",
     "moreInfo": "https://github.com/youcefKNL/Integration-maquette-la-montage-/blob/main/README.md"
+  },
+  {
+    "id": "blog",
+    "title": "Rapport de Pentest",
+    "technologie": "HTML, CSS/SCSS",
+    "icon": "https://youcefknl.github.io/datatest/github/icon/logo192.png",
+    "picture": "https://github.com/youcefKNL/legalis0002/blob/main/public/workImage/pentest1.jpg?raw=true",
+
+    "mission": "Ma mission consistait à réaliser un test de pénétration sur le serveur d'EvilCorp, qui nous a mandatés pour cette mission. Le livrable est un rapport de pentest contenant un résumé managérial, un résumé technique, une liste des vulnérabilités et leurs remédiations.",
+
+    "skill": "Maîtrise des techniques de pentest, programmation avancée, et mise en œuvre de mesures de sécurité.",
+    "siteUrl": "https://github.com/youcefKNL/Cybersecurity_Essential_Jedha_School/tree/main",
+    "github": "https://github.com/youcefKNL/Cybersecurity_Essential_Jedha_School",
+    "moreInfo": "https://github.com/youcefKNL/Cybersecurity_Essential_Jedha_School/blob/main/README.md"
   }
 ]
