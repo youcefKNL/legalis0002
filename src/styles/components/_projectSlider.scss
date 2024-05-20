@@ -65,11 +65,8 @@
                 font-size: 1em;
                 // height: 100%;
 
-                @media (max-width: 640px) {
-                    // height: 240px;
-                    // width: 90%;
-                    // margin: 0 5%;
-                    // flex-direction: column;
+                @media (max-width: 600px) {
+                    display: block;
 
                 }
 
@@ -90,8 +87,7 @@
 
                 .projectDescription {
                     @media (max-width: 600px) {
-                        width: 100%;
-                        padding: 0;
+                        // display: none;
                     }
 
                     height: 100%;
@@ -132,26 +128,35 @@
                     }
 
                     .linksProjects {
-                        display: flex;
+                        @include center;
 
+                        // margin: 0 auto;
 
                         .icon {
                             font-size: 2em;
                             transition: 0.3s ease;
                             margin: 4%;
 
+
+
                             // Au survol
                             &:hover {
-                                color: red;
+                                color: black;
                                 cursor: pointer;
                                 transform: scale(1.2);
                             }
 
-                            @media (max-width: 640px) {
-                                position: fixed;
-                                top: 5%;
-                                left: 5%;
+                        }
 
+                        @media (max-width: 600px) {
+                            font-size: 1.3em;
+                            position: fixed;
+                            top: 2%;
+                            left: 2%;
+                            color: red;
+
+                            svg {
+                                padding: 5%;
                             }
                         }
                     }
